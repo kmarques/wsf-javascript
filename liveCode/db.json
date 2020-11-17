@@ -1,0 +1,11 @@
+{
+  "student": [
+    { "id": 1, "name": "charlie", "courses": [1, 2] },
+    { "id": 2, "name": "Lulu", "courses": [0, 2] }
+  ],
+  "course": [
+    { "id": 0, "name": "Javascript" },
+    { "id": 1, "name": "Php" },
+    { "id": 2, "name": "Java" }
+  ]
+}
