@@ -2,8 +2,25 @@ const root = document.getElementById("root");
 
 const table = document.createElement("table");
 const tbody = document.createElement("tbody");
+const ratio = 40;
+const postes = {
+  dev: "red",
+  chief: "blue",
+};
+// Generate cases
+for (let i = 0; i < 100; i++) {
+  const color = i < ratio ? postes[selectedPost] : "grey";
+  const div = document.createElement("div");
+  div.style.backgroundColor = color;
+}
+// Generate selector options
+const root = document.getElementById("selector");
+for(let post in postes) {
 
-for (let i = 0; i < 4; i++) {
+}
+
+
+
   const tr = document.createElement("tr");
   for (let j = 0; j < 4; j++) {
     const td = document.createElement("td");

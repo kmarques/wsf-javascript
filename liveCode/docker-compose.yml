@@ -1,0 +1,10 @@
+version: '3'
+services:
+    node:
+      image: 'node:14-alpine'
+      volumes:
+        - './:/home/node/app'
+      working_dir: '/home/node/app'
+      ports:
+        - '3000:3000'
+      command: 'sh -c "npm install; npm start"'
